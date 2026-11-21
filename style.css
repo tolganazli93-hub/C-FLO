@@ -235,3 +235,13 @@ input,select,textarea { max-width:100%; min-width:0; }
 img,canvas,svg { max-width:100%; }
 .ios-nav { bottom:max(12px,env(safe-area-inset-bottom)); }
 @supports (overflow:clip) { body,html { overflow-x:clip; } }
+
+/* v3.0 — touch stability: keep native scrolling and accessible pinch zoom */
+html { touch-action:pan-x pan-y pinch-zoom; -webkit-text-size-adjust:100%; }
+body, #app, .app { touch-action:pan-x pan-y pinch-zoom; }
+button, a, input, select, textarea, label, [role="button"], .cflo-dock, .cflo-dock-tab, .card { touch-action:manipulation; }
+input:not([type="checkbox"]):not([type="radio"]), textarea, select { font-size:16px !important; line-height:normal; }
+@media(max-width:600px) {
+ html,body,#app { width:100%; min-width:0; max-width:100%; }
+ .app { max-width:100%; min-width:0; }
+}
