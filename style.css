@@ -208,3 +208,30 @@ body:not(.light) .glass-forecast-total{font-size:29px!important;font-weight:720!
 body:not(.light) .card h3{letter-spacing:-.35px}
 body:not(.light) .glass-section-label{margin-top:20px}
 @media(prefers-reduced-motion:reduce){body::before,body::after{animation:none!important}}
+
+/* v2.8 SOFT GLASS — translucent glass, diffused edges, legible surface typography */
+body:not(.light) .card,body:not(.light) .item,body:not(.light) .month-grid,body:not(.light) .v2-shortcuts button,body:not(.light) .glass-forecast,body:not(.light) .glass-breakdown,body:not(.light) .plan-entity,body:not(.light) .advice{
+  background:linear-gradient(150deg,rgba(235,255,255,.105),rgba(177,217,242,.038) 48%,rgba(195,243,255,.025)) padding-box,
+  linear-gradient(145deg,rgba(244,255,255,.44),rgba(214,247,255,.13) 29%,rgba(155,224,243,.07) 63%,rgba(235,255,255,.20)) border-box!important;
+  border:1px solid transparent!important;border-radius:30px!important;
+  -webkit-backdrop-filter:blur(26px) saturate(145%)!important;backdrop-filter:blur(26px) saturate(145%)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.17),inset 0 0 22px rgba(225,255,255,.018),0 18px 46px rgba(0,5,21,.13),0 0 26px rgba(150,239,236,.035)!important;
+}
+body:not(.light) .card.summary,body:not(.light) .glass-forecast,body:not(.light) .cflo-oneoffs{background:linear-gradient(155deg,rgba(232,255,255,.12),rgba(168,215,244,.038) 52%,rgba(223,255,250,.025)) padding-box,linear-gradient(140deg,rgba(246,255,255,.43),rgba(205,247,255,.14) 35%,rgba(185,237,255,.075) 65%,rgba(246,255,255,.20)) border-box!important}
+body:not(.light) .cflo-dock{background:linear-gradient(145deg,rgba(230,255,255,.16),rgba(140,203,235,.055) 60%,rgba(235,255,255,.09)) padding-box,linear-gradient(130deg,rgba(245,255,255,.45),rgba(200,243,255,.10) 55%,rgba(239,255,255,.24)) border-box!important;border:1px solid transparent!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.20),0 12px 36px rgba(0,7,25,.19)!important}
+body:not(.light) .cflo-dock-tab.active{background:rgba(227,255,252,.105)!important}
+body:not(.light) .card h2,body:not(.light) .card h3,body:not(.light) .card strong,body:not(.light) .card b{position:relative}
+@media(prefers-reduced-motion:reduce){body:not(.light)::before,body:not(.light)::after{animation:none!important}}
+
+/* v2.9 iPhone Safari: prevent input-focus zoom and horizontal layout overflow */
+html { width:100%; max-width:100%; overflow-x:clip; -webkit-text-size-adjust:100%; }
+body { width:100%; max-width:100%; min-height:100dvh; margin:0; overflow-x:clip; }
+*, *::before, *::after { box-sizing:border-box; }
+.app { width:100%; max-width:520px; min-width:0; }
+input:not([type="checkbox"]):not([type="radio"]), select, textarea,
+.spend-input, .plan-month-line input, .card-advice input[type="number"],
+.day-trigger { font-size:16px !important; }
+input,select,textarea { max-width:100%; min-width:0; }
+img,canvas,svg { max-width:100%; }
+.ios-nav { bottom:max(12px,env(safe-area-inset-bottom)); }
+@supports (overflow:clip) { body,html { overflow-x:clip; } }
