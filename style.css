@@ -1,0 +1,210 @@
+:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:dark;--bg:#07121e;--card:#13283b;--card2:#193347;--text:#f5f9fc;--muted:#9eb3c5;--accent:#55e5cb;--line:#30475a;--danger:#ff8998}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text)}body.light{color-scheme:light;--bg:#f3f7fa;--card:#fff;--card2:#eaf1f5;--text:#13283b;--muted:#536b7b;--accent:#087c71;--line:#cbdce5;--danger:#bf3652}.app{max-width:620px;margin:auto;min-height:100dvh;padding:22px 18px 95px}.brand{font-weight:900;font-style:italic;font-size:30px;letter-spacing:-1px}.brand b{color:var(--accent)}.tag{font-size:10px;letter-spacing:2px;color:var(--accent);font-weight:800;margin-top:4px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.iconbtn{border:0;border-radius:24px;background:var(--card);color:var(--text);padding:10px 13px;cursor:pointer}.hero{margin:14px 0 25px}.hero h1{font-size:28px;margin:7px 0}.muted{color:var(--muted)}.tiny{font-size:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;margin:14px 0}.card h3{margin:0 0 8px}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.stack{display:grid;gap:12px}.pill{border-radius:30px;background:var(--card2);padding:8px 12px;color:var(--accent);font-size:12px}.money{font-size:29px;font-weight:850;letter-spacing:-1px;margin:8px 0}.green{color:var(--accent)}.red{color:var(--danger)}.btn{border:0;border-radius:14px;background:var(--accent);color:#062c2a;padding:14px 17px;font-weight:800;cursor:pointer;font-size:15px}.btn:disabled{opacity:.45;cursor:not-allowed}.btn.secondary{background:var(--card2);color:var(--text);border:1px solid var(--line)}.btn.danger{color:#fff;background:#ad3d52}.btn.full{width:100%}.actions{display:flex;gap:9px;margin-top:17px}.actions>*{flex:1}.field{display:grid;gap:7px;margin:14px 0;font-size:13px;color:var(--muted)}input,select{font:inherit;color:var(--text);width:100%;border:1px solid var(--line);background:var(--card2);border-radius:13px;padding:13px 12px;outline:none}input:focus,select:focus{border-color:var(--accent)}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.progress{display:flex;gap:5px;margin:15px 0 24px}.progress span{height:5px;flex:1;background:var(--line);border-radius:8px}.progress span.on{background:var(--accent)}.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:15px;margin:10px 0}.item h3{margin:0 0 5px;font-size:16px}.item .amount{font-size:19px;font-weight:800;margin-top:10px}.mini-btn{background:none;border:0;color:var(--muted);cursor:pointer;font-size:17px;padding:6px}.add{width:100%;border:1px dashed var(--accent);background:transparent;color:var(--accent);padding:17px;border-radius:16px;font-weight:750;cursor:pointer;margin-top:10px}.summary{background:linear-gradient(125deg,#10283b,#0f5858);color:#fff;border:0}.summary .muted{color:#c0d8df}.nav{position:fixed;bottom:0;left:0;right:0;background:var(--bg);border-top:1px solid var(--line);display:flex;justify-content:center;padding:10px 8px max(10px,env(safe-area-inset-bottom));gap:8px}.nav button{background:none;border:0;color:var(--muted);padding:9px 15px;font-size:12px;cursor:pointer}.nav button.active{color:var(--accent)}.auth{display:flex;flex-direction:column;justify-content:center;min-height:90dvh;text-align:center}.auth .brand{font-size:54px}.auth .tag{margin-bottom:60px}.auth .field{text-align:left}.pin{display:flex;justify-content:center;gap:12px;margin:20px auto}.pin span{width:48px;height:52px;border:1px solid var(--line);border-radius:12px;background:var(--card);display:grid;place-items:center}.pin span.filled:after{content:"";width:10px;height:10px;border-radius:50%;background:var(--accent)}.pin.shake{animation:shake .35s}@keyframes shake{25%{transform:translateX(-8px)}50%{transform:translateX(8px)}75%{transform:translateX(-5px)}}.pin-input{position:absolute;opacity:0;width:1px;height:1px}.hint{font-size:12px;color:var(--muted);margin-top:14px}.day-picker{position:relative}.day-menu{position:absolute;top:calc(100% + 4px);left:0;right:0;max-height:190px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;background:var(--card2);border:1px solid var(--line);border-radius:12px;z-index:30;box-shadow:0 10px 25px #0004}.day-menu::-webkit-scrollbar{display:none}.day-menu button{width:100%;display:block;text-align:left;border:0;background:none;color:var(--text);padding:10px 14px;font:inherit}.day-menu button.active{background:#28776f;color:#fff}.day-trigger{width:100%;text-align:left;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:13px;border-radius:12px}.table-row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);gap:10px}.table-row:last-child{border:0}.notice{border-left:3px solid var(--accent);padding:9px 12px;background:var(--card2);font-size:12px;color:var(--muted);border-radius:6px}.empty{text-align:center;color:var(--muted);padding:20px}.section-title{margin:24px 0 10px}.switch{display:flex;gap:5px}.switch button{border:0;border-radius:20px;padding:9px 13px;background:var(--card2);color:var(--muted)}.switch button.active{background:var(--accent);color:#062c2a}@media(max-width:370px){.app{padding-left:12px;padding-right:12px}.two{grid-template-columns:1fr}}
+
+/* C-FLO: tum gun secicileri icin kompakt dokunmatik menu */
+.day-menu{max-height:184px!important;overflow-y:auto!important;overflow-x:hidden!important;scrollbar-width:none!important;-ms-overflow-style:none;touch-action:pan-y;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scroll-snap-type:y proximity}
+.day-menu::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+.day-menu button{min-height:38px;padding:9px 14px;scroll-snap-align:start;cursor:pointer}
+.day-trigger{display:block;cursor:pointer}
+
+/* Kart ve kredi formu */
+.checkrow{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted);margin:12px 0}.checkrow input{width:18px;height:18px;accent-color:var(--accent)}
+.day-menu{max-height:184px!important;scrollbar-width:none!important;touch-action:pan-y}.day-menu::-webkit-scrollbar{display:none!important}
+
+/* v0.8: altı aylık nakit akışı ve tek seferlik işlemler */
+.month-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0 18px}.month-card{font:inherit;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:9px;min-width:0;padding:15px 12px;border-radius:18px;border:1px solid #355064;background:#14283b;color:#fff}.month-card b{font-size:clamp(14px,3.5vw,20px);overflow-wrap:anywhere}.month-card small{font-size:11px;line-height:1.4}.month-card.risk{background:#38202d;border-color:#824051}.month-card.risk b,.month-card.risk small{color:#ff9ba6}.month-card.safe{background:#142e39}.month-card.safe b,.month-card.safe small{color:#61e6cb}.month-card.selected{outline:2px solid #61e6cb;outline-offset:1px}.month-heading{align-items:center;gap:10px;flex-wrap:wrap}.scenario{display:flex;align-items:center;gap:7px}.scenario input{accent-color:#55e5cb}.oneoff-form{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}.oneoff-form .actions{margin-top:12px}.month-card:focus-visible{outline:3px solid #61e6cb}body.light .month-card.safe{background:#e5f4f0;color:#183b3a}body.light .month-card.risk{background:#fff0f1;color:#5a2832}body.light .month-card.safe b,body.light .month-card.safe small{color:#176d5e}body.light .month-card.risk b,body.light .month-card.risk small{color:#a42b43}body.light .month-card.selected{outline-color:#168f7b}
+
+/* v0.9 */
+.cash-link{background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;text-align:left}.cash-link span{color:var(--accent);padding-left:5px}.month-planner{margin:18px 0;padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--card2)}.month-planner h4{margin:20px 0 10px}.defer-line{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 0;border-top:1px solid var(--line)}.defer-line .btn{font-size:12px;padding:9px 11px}.defer-overlay{position:fixed;inset:0;background:#0009;z-index:200;display:grid;place-items:center;padding:16px}.defer-dialog{width:min(100%,460px);max-height:85dvh;overflow:auto;margin:0;box-shadow:0 20px 60px #0008}body.light .month-planner{background:#edf3f6}
+/* v1.1 akilli oneriler */
+.advice{margin:18px 0;padding:14px;border-radius:16px;background:var(--card);border:1px solid var(--line)}.advice h3{font-size:17px;margin:0}.advice-option{display:flex;gap:12px;align-items:flex-start;padding:14px 10px;margin:9px 0;border:1px solid var(--line);border-radius:14px;cursor:pointer}.advice-option input{width:19px;min-width:19px;height:19px;accent-color:var(--accent);margin:3px 0}.advice-option span{display:grid;gap:7px}.advice-option small{font-size:12px;color:var(--muted);line-height:1.5}.advice-option strong{font-size:13px}.advice-result{display:grid;gap:7px;padding:14px;background:var(--card2);border-radius:14px}.advice-result b{font-size:24px}.advice-result small{font-size:12px}
+
+.card-advice{display:flex;flex-direction:column;gap:10px}.card-advice .field{margin:0}.card-advice input[type=number]{width:100%;padding:12px;border:1px solid #3a566b;border-radius:12px;background:#183247;color:inherit;font:inherit}.card-advice .checkrow{margin:0}.card-advice .row{justify-content:flex-start;gap:12px}
+
+/* v1.6: ayrı aylık sayfa ve açılır öneriler */
+.advice-expand{display:block;width:100%;text-align:left;border:0;background:transparent;color:var(--text);font:inherit;font-weight:750;font-size:15px;cursor:pointer;padding:4px 0 10px}.advice-detail[hidden]{display:none!important}.advice-detail{display:grid;gap:10px}.advice-option.card-advice{display:block}.advice-option.card-advice .advice-detail>.row{display:none}.advice-option.card-advice .advice-detail .field{margin:5px 0}.advice-option.card-advice input[data-action="card-amount"]{appearance:textfield;-moz-appearance:textfield}.advice-option.card-advice input[data-action="card-amount"]::-webkit-inner-spin-button,.advice-option.card-advice input[data-action="card-amount"]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+/* C-FLO v1.7 compact current-month activity and forward planning */
+.compact-details{padding:14px 18px!important}.compact-details summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}.compact-details summary::-webkit-details-marker{display:none}.compact-details[open] summary{margin-bottom:12px}.compact-expenses{padding:15px 18px!important}.compact-expenses h3{margin:0}.expense-mini{display:flex;align-items:center;gap:10px;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(145,174,196,.15);font-size:13px}.expense-mini label{display:flex;align-items:center;gap:9px;min-width:0;flex:1}.expense-mini label span{display:flex;flex-direction:column;min-width:0}.expense-mini small{color:#9db2c4;font-size:11px}.expense-mini b{font-size:13px;white-space:nowrap}.expense-mini input[type=checkbox]{accent-color:#53e5cd;width:18px;height:18px;flex-shrink:0}.spend-line{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid rgba(145,174,196,.15)}.spend-line label{display:flex;flex-direction:column;gap:4px;font-size:13px}.spend-line small{font-size:11px}.spend-input{width:130px;max-width:45%;border-radius:11px;background:#19364a;border:1px solid #38566b;color:inherit;padding:11px;font-size:15px}.month-grid+.add{margin:16px 0 24px}.compact-expenses .hint{margin:10px 0 0;font-size:11px}
+/* v1.8 — aylık gider planlama */
+.plan-entity{border:1px solid var(--line,#2c455a);border-radius:15px;margin:10px 0;overflow:hidden;background:rgba(255,255,255,.018)}
+.plan-entity-head{width:100%;border:0;background:transparent;color:inherit;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:12px;padding:15px;cursor:pointer;font:inherit}
+.plan-entity-head span:first-child{display:flex;flex-direction:column;gap:5px}.plan-entity-head span:last-child{white-space:nowrap;color:var(--accent,#4fe0ca);font-weight:650}.plan-entity-head small{font-size:12px;font-weight:400}
+.plan-entity-body{padding:14px;border-top:1px solid var(--line,#2c455a)}.plan-controls{display:grid;gap:10px}.plan-month-list{max-height:330px;overflow-y:auto;scrollbar-width:none;margin:12px 0}.plan-month-list::-webkit-scrollbar{display:none}
+.plan-month-line{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line,#2c455a);font-size:14px}.plan-month-line input{max-width:145px;width:45%;padding:10px;border-radius:10px;border:1px solid var(--line,#2c455a);background:var(--input,#19354a);color:inherit;font-size:16px}
+.raise-box{padding:14px;border:1px solid var(--line,#2c455a);border-radius:14px;margin:12px 0}.raise-box h4{margin-top:0}
+
+/* C-FLO v2 — compact native-iOS-inspired redesign */
+:root{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;--bg:#080f18;--card:#111d2b;--card2:#192b3b;--line:#273848;--muted:#91a4b5;--accent:#57e2c5;--danger:#fa758b}body{background:var(--bg);font-size:14px;-webkit-font-smoothing:antialiased}body.light{--bg:#f5f7f9;--card:#fff;--card2:#f0f4f6;--line:#dce4e9;--muted:#667788;--accent:#078a78;--danger:#c13e54}.app{max-width:520px;padding:17px 16px 110px}.top{margin-bottom:12px}.brand{font-size:25px;letter-spacing:-.9px}.tag{font-size:8px;letter-spacing:1.4px;font-weight:600}.iconbtn{padding:9px 12px;background:var(--card2)}.hero{margin:8px 0 15px}.hero h1{font-size:20px;font-weight:650;letter-spacing:-.4px}.card{border-radius:21px;padding:17px;margin:11px 0;box-shadow:0 4px 24px #0000000a}.card h3{font-size:15px;font-weight:650;letter-spacing:-.15px}.money{font-size:27px;font-weight:750;letter-spacing:-.8px}.tiny,.hint{font-size:11px;line-height:1.55}.two h3{font-size:14px!important}.two{gap:8px}.section-title{font-size:18px;margin:20px 0 10px}.btn,.add{font-size:13px;padding:12px 13px;border-radius:12px;font-weight:650}.month-grid{display:flex;flex-direction:column;gap:0;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:6px 14px;overflow:hidden}.month-card,.month-card.safe,.month-card.risk,body.light .month-card.safe,body.light .month-card.risk{display:grid;grid-template-columns:1fr auto;gap:3px 10px;background:transparent;color:var(--text);border:0;border-bottom:1px solid var(--line);border-radius:0;padding:13px 2px;outline:0!important;box-shadow:none}.month-card:last-child{border-bottom:0}.month-card .tiny{font-size:13px}.month-card b{font-size:15px;letter-spacing:-.3px;text-align:right}.month-card small{grid-column:1/-1;font-size:10px}.month-card.selected{background:linear-gradient(90deg,#4ce2c313,transparent)!important}.month-card.risk b,.month-card.risk small{color:var(--danger)!important}.month-card.safe b,.month-card.safe small{color:var(--accent)!important}.month-heading{align-items:center}.scenario{max-width:155px;font-size:10px}.scenario input{width:14px}.v2-shortcuts{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:12px 0}.v2-shortcuts button,.budget-quick button{display:flex;flex-direction:column;align-items:flex-start;gap:5px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--text);padding:14px 11px;text-align:left;cursor:pointer;font:inherit}.v2-shortcuts button span,.budget-quick button span{color:var(--accent);font-size:23px}.v2-shortcuts button b{font-size:12px;font-weight:600}.v2-shortcuts small,.budget-quick small{font-size:10px;color:var(--muted)}.ios-nav{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:min(100%,520px);background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(22px);border:1px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0;justify-content:space-around;z-index:60}.ios-nav button{display:flex;flex-direction:column;gap:4px;align-items:center;font-size:10px;padding:9px 8px}.ios-nav button span{font-size:21px}.page-heading{margin:18px 0}.page-heading h1{font-size:23px;font-weight:650;margin:10px 0}.eyebrow{font-size:10px;letter-spacing:1.4px;color:var(--accent)}.back-link{background:transparent;border:0;color:var(--accent);padding:8px 0;font-size:13px}.budget-quick{display:grid;grid-template-columns:1fr 1fr;gap:9px}.plan-entity-head{padding:12px}.plan-entity-head b{font-size:13px}.plan-entity-body{padding:12px}.plan-month-line{font-size:12px}.plan-month-line input{font-size:14px}.card.summary{background:linear-gradient(135deg,#142b32,#112535 60%,#101e2b);border-color:#2c4a52}body.light .card.summary{background:linear-gradient(135deg,#e7f8f3,#fff)}.compact-expenses .expense-mini{font-size:12px}.card .row h3{margin:0}input,select,button{touch-action:manipulation}input[type=text],input[type=number],select{font-size:16px}@media(min-width:750px){.app{padding-top:25px}}
+
+/* v2.1 — interactive edge-swipe navigation */
+html,body{overflow-x:clip}#app{position:relative;z-index:2;min-height:100dvh;background:var(--bg);will-change:transform}#app.swipe-moving{transition:none!important;box-shadow:-16px 0 38px #0005;border-radius:14px 0 0 14px;overflow:hidden}.swipe-back-preview{position:fixed;inset:0;z-index:1;overflow:hidden;pointer-events:none;background:var(--bg);will-change:transform}.swipe-back-preview .app{min-height:100dvh}.swipe-back-preview .nav{visibility:hidden}.page-heading{margin:10px 0 15px}.page-heading h1{margin:4px 0 9px}.page-heading .eyebrow{display:none}.top{display:flex;align-items:center;justify-content:space-between;gap:10px}.top .brand{white-space:nowrap}.top .tag{white-space:nowrap}.top .iconbtn{flex-shrink:0}button.back-link{display:none!important}@media(prefers-reduced-motion:reduce){#app{will-change:auto}#app:not(.swipe-moving){transition:none!important}}
+
+/* C-FLO v2.2 — refined iOS glass surfaces */
+:root{--bg:#080f18;--card:rgba(27,45,61,.52);--card2:rgba(47,70,88,.43);--line:rgba(190,224,238,.15);--muted:#a2b5c3;--accent:#5ce9cf;--danger:#ff8195}
+body{background:radial-gradient(ellipse 90% 34% at 85% 2%,rgba(45,174,160,.16),transparent 75%),radial-gradient(ellipse 75% 42% at 5% 58%,rgba(58,103,159,.14),transparent 75%),#080f18;background-attachment:fixed}
+body.light{--bg:#eef3f6;--card:rgba(255,255,255,.57);--card2:rgba(255,255,255,.48);--line:rgba(58,89,106,.15);--muted:#647b8a;--accent:#087e72;--danger:#bd3f56;background:radial-gradient(ellipse 85% 40% at 90% 5%,rgba(81,203,184,.22),transparent 75%),radial-gradient(ellipse 80% 50% at 0% 70%,rgba(128,174,212,.19),transparent 75%),#eef3f6;background-attachment:fixed}
+#app{background:transparent}
+.card,.item,.month-grid,.month-planner,.advice,.plan-entity,.raise-box,.compact-details,.compact-expenses,.defer-dialog{background:var(--card)!important;border:1px solid var(--line)!important;backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%);box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 10px 32px rgba(0,0,0,.11);border-radius:21px}
+.card.summary{background:linear-gradient(125deg,rgba(34,104,104,.65),rgba(21,53,70,.55) 56%,rgba(18,35,51,.7))!important;border-color:rgba(141,237,218,.22)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 14px 38px rgba(0,0,0,.15)}
+body.light .card.summary{background:linear-gradient(125deg,rgba(188,246,230,.77),rgba(255,255,255,.55))!important}
+.card,.item{padding:16px}.card h3{font-size:14px;font-weight:650}.money{font-size:26px;font-weight:720}.section-title{font-size:17px;font-weight:680}
+.v2-shortcuts button,.budget-quick button,.iconbtn,.btn.secondary,.pill,.day-trigger,.day-menu,.advice-result,.plan-entity-body,.month-planner,.notice{background:var(--card2)!important;border:1px solid var(--line);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.v2-shortcuts button,.budget-quick button{border-radius:19px;padding:13px 11px}
+.month-grid{padding:4px 13px}.month-card,.month-card.safe,.month-card.risk{background:transparent!important;border-bottom:1px solid var(--line)!important;box-shadow:none!important}.month-card:last-child{border-bottom:0!important}.month-card.selected{background:linear-gradient(90deg,rgba(86,230,205,.10),transparent)!important;border-radius:12px}
+input,select,.spend-input,.plan-month-line input,.card-advice input[type=number]{background:rgba(120,162,185,.10)!important;border:1px solid var(--line)!important;border-radius:12px;color:var(--text)!important;box-shadow:inset 0 1px 2px rgba(0,0,0,.06)}
+input:focus,select:focus{border-color:var(--accent)!important;box-shadow:0 0 0 3px rgba(92,233,207,.12)}
+.ios-nav{background:rgba(21,36,51,.70)!important;backdrop-filter:blur(32px) saturate(170%);-webkit-backdrop-filter:blur(32px) saturate(170%);border:1px solid rgba(220,244,249,.16);box-shadow:0 -9px 35px rgba(0,0,0,.13),inset 0 1px 0 rgba(255,255,255,.10)}
+body.light .ios-nav{background:rgba(249,253,255,.75)!important}
+.btn:not(.secondary):not(.danger){box-shadow:0 6px 18px rgba(62,217,193,.12)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.card,.item,.month-grid,.advice,.plan-entity{background:#1a2d3e!important}body.light .card,body.light .item,body.light .month-grid{background:#fff!important}}
+@media(prefers-reduced-transparency:reduce){.card,.item,.month-grid,.advice,.plan-entity{backdrop-filter:none;-webkit-backdrop-filter:none;background:#1b3042!important}body.light .card,body.light .item,body.light .month-grid{background:#fff!important}}
+
+/* v2.3: kalıcı tek seferlik işlem defteri */
+.cflo-oneoffs{background:linear-gradient(140deg,rgba(40,77,94,.48),rgba(28,42,64,.42))!important}
+.cflo-oneoffs h3{margin:5px 0 0;font-size:16px}
+.cflo-plus{height:36px;width:36px;border-radius:50%;background:rgba(91,231,205,.16);border:1px solid rgba(91,231,205,.3);color:var(--accent);font-size:23px;cursor:pointer}
+.cflo-oneoff-totals{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:15px 0}
+.cflo-oneoff-totals>div{padding:12px;border-radius:15px;background:rgba(130,181,201,.09);border:1px solid var(--line);min-width:0}
+.cflo-oneoff-totals small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}
+.cflo-oneoff-totals strong{font-size:15px;overflow-wrap:anywhere}
+.cflo-transaction{display:flex;gap:10px;align-items:center;border-top:1px solid var(--line);padding:14px 0}
+.cflo-transaction-icon{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:13px;background:rgba(92,233,207,.12);color:var(--accent);font-size:19px}
+.cflo-transaction-icon.outgoing{background:rgba(255,129,149,.11);color:var(--danger)}
+.cflo-transaction-main{min-width:0;flex:1;display:flex;flex-direction:column;gap:5px}
+.cflo-transaction-main b{font-size:13px;overflow-wrap:anywhere}
+.cflo-transaction-main small{font-size:10px;color:var(--muted)}
+.cflo-transaction-end{text-align:right;flex:none}
+.cflo-transaction-end strong{font-size:13px}
+.cflo-transaction-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:7px}
+.cflo-transaction-actions button{border:0;background:none;color:var(--muted);font-size:11px;padding:4px;cursor:pointer}
+.cflo-transaction-actions button:last-child{color:var(--danger)}
+.cflo-oneoffs .oneoff-form{padding:15px;margin-top:15px;background:rgba(105,151,170,.09);border:1px solid var(--line);border-radius:17px}
+
+/* C-FLO v2.4 — premium layered liquid glass */
+:root{--card:rgba(36,68,86,.30);--card2:rgba(67,111,133,.20);--line:rgba(212,245,255,.17)}
+body{background:
+radial-gradient(ellipse 80% 30% at 5% 0%,rgba(13,164,164,.27),transparent 76%),
+radial-gradient(ellipse 70% 28% at 95% 24%,rgba(64,95,205,.26),transparent 75%),
+radial-gradient(ellipse 65% 36% at 6% 62%,rgba(40,131,173,.19),transparent 75%),
+linear-gradient(150deg,#06131e 0%,#0a172a 54%,#0b1424 100%);background-attachment:fixed}
+body.light{background:radial-gradient(ellipse 80% 30% at 5% 0%,rgba(70,201,193,.27),transparent 76%),radial-gradient(ellipse 70% 30% at 95% 32%,rgba(112,150,224,.22),transparent 75%),#e9f1f5}
+.app{max-width:560px;padding:20px 18px 112px}
+.top{margin-bottom:20px}
+.brand{font-size:26px;font-weight:850}
+.hero.v2-greeting{margin:17px 0 18px}
+.hero.v2-greeting h1{font-size:23px;letter-spacing:-.6px}
+.card,.item,.month-grid,.v2-shortcuts button,.glass-forecast,.glass-breakdown{
+background:linear-gradient(135deg,rgba(160,222,238,.12),rgba(40,70,111,.12) 50%,rgba(109,215,205,.055))!important;
+border:1px solid rgba(211,246,255,.20)!important;
+backdrop-filter:blur(35px) saturate(170%)!important;-webkit-backdrop-filter:blur(35px) saturate(170%)!important;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.19),inset 0 -1px 0 rgba(255,255,255,.025),0 12px 36px rgba(0,0,0,.18)!important;
+border-radius:25px}
+.card.summary{background:linear-gradient(120deg,rgba(32,156,148,.31),rgba(44,94,138,.23) 55%,rgba(41,58,109,.22))!important;border-color:rgba(153,249,230,.28)!important}
+.glass-forecast{padding:19px 18px 14px;margin:15px 0 20px;overflow:hidden;position:relative}
+.glass-forecast:before{content:"";position:absolute;width:170px;height:130px;right:-50px;top:-75px;background:rgba(90,222,215,.22);filter:blur(50px);border-radius:50%;pointer-events:none}
+.glass-overline{font-size:9px;letter-spacing:1.5px;color:#9bded9;font-weight:750}
+.glass-forecast h3{font-size:16px;margin:6px 0 0}
+.glass-live{font-size:10px;color:#b8d5db;white-space:nowrap}
+.glass-live i{display:inline-block;width:6px;height:6px;background:#5bf0cf;border-radius:50%;margin-right:5px;box-shadow:0 0 10px #5bf0cf}
+.glass-forecast-total{font-size:30px;font-weight:760;letter-spacing:-1px;margin:16px 0 3px}
+.glass-chart{margin:13px -5px 0}
+.glass-chart svg{display:block;width:100%;height:132px;overflow:visible}
+.glass-chart-axis{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin:4px 6px 13px}
+.glass-metrics{display:grid;grid-template-columns:1fr 1fr;gap:9px;border-top:1px solid var(--line);padding-top:14px}
+.glass-metrics>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.glass-metrics small{font-size:11px;color:var(--muted)}
+.glass-metrics b{font-size:15px;overflow-wrap:anywhere}
+.glass-section-label{display:flex;justify-content:space-between;align-items:center;margin:21px 2px 11px}
+.glass-section-label span:first-child{font-size:15px;font-weight:680}
+.glass-section-label span:last-child{font-size:11px;color:var(--muted)}
+.v2-shortcuts{gap:10px}
+.v2-shortcuts button{min-height:105px;padding:14px 12px;transition:transform .18s}
+.v2-shortcuts button:active{transform:scale(.96)}
+.v2-shortcuts button span{font-size:21px}
+.v2-shortcuts button b{font-size:12px}
+.ios-nav{background:rgba(15,36,55,.55)!important;backdrop-filter:blur(42px) saturate(190%)!important;-webkit-backdrop-filter:blur(42px) saturate(190%)!important;border-radius:27px 27px 0 0}
+.glass-breakdown summary{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:650;cursor:pointer;list-style:none}
+.glass-breakdown summary::-webkit-details-marker{display:none}
+.glass-breakdown[open] summary{padding-bottom:12px;border-bottom:1px solid var(--line)}
+.month-grid{padding:5px 14px}
+.cflo-oneoffs{background:linear-gradient(135deg,rgba(76,137,164,.20),rgba(58,88,130,.12))!important}
+body.light .glass-overline{color:#087e72}
+body.light .glass-live{color:#52717a}
+@media(max-width:380px){.glass-forecast-total{font-size:25px}.glass-metrics b{font-size:13px}}
+
+/* v2.5 iPhone-style floating Liquid Glass tab bar — final overrides */
+.app{padding-bottom:calc(130px + env(safe-area-inset-bottom))!important}
+.nav.ios-nav{position:fixed!important;left:50%!important;right:auto!important;bottom:calc(13px + env(safe-area-inset-bottom))!important;top:auto!important;transform:translateX(-50%)!important;width:min(calc(100% - 28px),450px)!important;display:flex!important;align-items:center!important;gap:9px!important;padding:7px!important;margin:0!important;border:1px solid rgba(231,255,255,.32)!important;border-radius:999px!important;background:linear-gradient(140deg,rgba(176,223,239,.22),rgba(52,88,125,.26) 55%,rgba(139,208,221,.14))!important;backdrop-filter:blur(34px) saturate(210%)!important;-webkit-backdrop-filter:blur(34px) saturate(210%)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.33),inset 0 -1px 0 rgba(255,255,255,.07),0 8px 34px rgba(0,8,22,.32)!important;z-index:150!important;isolation:isolate}
+.cflo-tab-shell{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));flex:1;gap:3px;min-width:0}
+.nav.ios-nav .cflo-tab{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:3px!important;min-width:0!important;height:55px!important;padding:6px 4px!important;border:1px solid transparent!important;border-radius:999px!important;background:transparent!important;color:rgba(224,239,249,.72)!important;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif!important;font-size:10px!important;font-weight:520!important;line-height:1.1!important;white-space:nowrap!important;transition:background .22s ease,transform .2s ease,color .22s ease!important}
+.nav.ios-nav .cflo-tab.active{background:linear-gradient(140deg,rgba(175,247,238,.25),rgba(110,183,216,.13))!important;border-color:rgba(218,255,251,.24)!important;color:#8cffe9!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.26),0 2px 14px rgba(0,0,0,.10)!important}
+.nav.ios-nav .cflo-tab:active,.nav.ios-nav .cflo-logout:active{transform:scale(.94)!important}
+.nav.ios-nav .cflo-tab-icon{display:block!important;height:22px!important;width:22px!important;line-height:0!important;font-size:0!important}
+.nav.ios-nav svg{display:block;width:100%;height:100%}
+.nav.ios-nav .cflo-logout{flex:none;display:grid!important;place-items:center!important;width:48px!important;height:48px!important;border-radius:50%!important;padding:13px!important;color:rgba(224,239,249,.82)!important;background:rgba(8,28,49,.20)!important;border:1px solid rgba(232,255,255,.15)!important}
+body.light .nav.ios-nav{background:linear-gradient(140deg,rgba(255,255,255,.72),rgba(211,233,243,.55))!important;border-color:rgba(255,255,255,.8)!important;box-shadow:inset 0 1px 0 #fff,0 9px 30px rgba(42,77,101,.18)!important}
+body.light .nav.ios-nav .cflo-tab{color:#526b7a!important}
+body.light .nav.ios-nav .cflo-tab.active{color:#067f73!important;background:rgba(255,255,255,.72)!important;border-color:rgba(255,255,255,.9)!important}
+body.light .nav.ios-nav .cflo-logout{color:#526b7a!important;background:rgba(255,255,255,.35)!important}
+@media(max-width:360px){.nav.ios-nav{width:calc(100% - 18px)!important;gap:4px!important}.nav.ios-nav .cflo-logout{width:43px!important;height:43px!important}.nav.ios-nav .cflo-tab{font-size:9px!important}}
+@media(prefers-reduced-motion:reduce){.nav.ios-nav *{transition:none!important}}
+
+/* v2.6: isolated, compact iPhone dock — no legacy nav selectors */
+.cflo-dock{box-sizing:border-box;position:fixed;z-index:250;bottom:calc(12px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:min(360px,calc(100vw - 36px));height:65px;padding:5px 7px;display:flex;align-items:center;gap:5px;border-radius:23px;border:1px solid rgba(230,250,255,.23);background:rgba(28,48,71,.53);-webkit-backdrop-filter:blur(28px) saturate(155%);backdrop-filter:blur(28px) saturate(155%);box-shadow:0 9px 26px rgba(0,8,20,.22),inset 0 1px 0 rgba(255,255,255,.14)}
+.cflo-dock *{box-sizing:border-box}
+.cflo-dock-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:3px;flex:1;min-width:0;height:100%}
+.cflo-dock button{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;appearance:none;-webkit-appearance:none;cursor:pointer}
+.cflo-dock-tab{height:53px;min-width:0;width:100%;padding:5px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:0;border-radius:17px;background:transparent;color:#b7c9d7;font-size:10px;font-weight:450;line-height:1.1;white-space:nowrap}
+.cflo-dock-tab.active{background:rgba(134,221,221,.13);color:#65edda}
+.cflo-dock-icon{display:block;width:19px;height:19px;flex:none;line-height:0;font-size:0}
+.cflo-dock-icon svg{display:block;width:19px;height:19px}
+.cflo-dock-exit{width:38px;height:44px;flex:none;display:grid;place-items:center;border:0;border-left:1px solid rgba(220,250,255,.14);border-radius:0;background:transparent;color:#b7c9d7;padding:10px}
+.cflo-dock-exit svg{width:18px;height:18px}
+.cflo-dock button:active{transform:scale(.96)}
+body.light .cflo-dock{background:rgba(240,249,252,.70);border-color:rgba(255,255,255,.8);box-shadow:0 8px 28px rgba(50,75,100,.14),inset 0 1px 0 #fff}
+body.light .cflo-dock-tab{color:#536b79}
+body.light .cflo-dock-tab.active{color:#078d7b;background:rgba(17,153,138,.11)}
+body.light .cflo-dock-exit{color:#536b79;border-color:rgba(25,85,100,.13)}
+.app{padding-bottom:calc(115px + env(safe-area-inset-bottom))!important}
+@media(max-width:350px){.cflo-dock{width:calc(100vw - 22px);height:61px}.cflo-dock-tab{height:49px;font-size:9px}}
+
+
+/* v2.7 — Aurora Glass: cohesive visual layer, preserves all finance logic */
+:root{--glass-stroke:rgba(236,255,255,.32);--glass-glow:rgba(121,255,232,.18)}
+html{min-height:100%;background:#060e1e}
+body:not(.light){background:linear-gradient(155deg,#061522 0%,#111a36 45%,#08192d 100%)!important;background-attachment:fixed!important;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif!important;-webkit-font-smoothing:antialiased;letter-spacing:-.015em}
+/* Luminous aurora bands are independent of the scrolling content and remain visible through glass */
+body:not(.light)::before{content:"";position:fixed;inset:-15% -25%;z-index:0;pointer-events:none;background:
+ radial-gradient(ellipse 42% 25% at 22% 15%,rgba(23,229,181,.65) 0%,rgba(25,176,189,.30) 42%,transparent 77%),
+ radial-gradient(ellipse 35% 45% at 83% 22%,rgba(89,80,235,.48) 0%,rgba(65,104,227,.20) 51%,transparent 83%),
+ radial-gradient(ellipse 42% 32% at 30% 65%,rgba(23,160,214,.44) 0%,rgba(26,96,168,.18) 48%,transparent 80%),
+ radial-gradient(ellipse 40% 25% at 85% 83%,rgba(35,212,160,.33),transparent 79%);
+ filter:blur(26px) saturate(150%);transform:rotate(-13deg);animation:cfloAuroraDrift 24s ease-in-out infinite alternate}
+body:not(.light)::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(115deg,transparent 9%,rgba(100,255,219,.065) 24%,transparent 39%,rgba(135,120,255,.07) 58%,transparent 76%);background-size:180% 180%;animation:cfloAuroraSweep 19s ease-in-out infinite alternate}
+@keyframes cfloAuroraDrift{0%{transform:translate(-3%,-2%) rotate(-15deg) scale(1)}100%{transform:translate(4%,3%) rotate(-7deg) scale(1.12)}}
+@keyframes cfloAuroraSweep{0%{background-position:0% 30%}100%{background-position:100% 70%}}
+body:not(.light) .app{position:relative;z-index:1}
+body:not(.light) .card,body:not(.light) .item,body:not(.light) .month-grid,body:not(.light) .v2-shortcuts button,body:not(.light) .glass-forecast,body:not(.light) .glass-breakdown,body:not(.light) .plan-entity,body:not(.light) .advice{
+ background:linear-gradient(132deg,rgba(224,255,255,.16) 0%,rgba(188,227,255,.085) 25%,rgba(68,112,150,.095) 58%,rgba(205,255,248,.045) 100%)!important;
+ border:1px solid var(--glass-stroke)!important;
+ -webkit-backdrop-filter:blur(30px) saturate(185%) brightness(1.08)!important;backdrop-filter:blur(30px) saturate(185%) brightness(1.08)!important;
+ box-shadow:inset 0 1.5px 0 rgba(255,255,255,.35),inset 1px 0 0 rgba(255,255,255,.09),inset 0 -1px 0 rgba(255,255,255,.055),0 14px 38px rgba(1,7,24,.18),0 0 32px rgba(90,211,224,.055)!important;
+ border-radius:26px!important;
+}
+body:not(.light) .card.summary{background:linear-gradient(122deg,rgba(191,255,242,.21),rgba(102,159,213,.11) 53%,rgba(150,132,255,.10))!important}
+body:not(.light) .glass-forecast{background:linear-gradient(145deg,rgba(196,255,248,.15),rgba(116,154,255,.085) 58%,rgba(113,242,224,.08))!important}
+body:not(.light) .cflo-oneoffs{background:linear-gradient(120deg,rgba(214,253,255,.14),rgba(101,164,199,.085))!important}
+body:not(.light) .v2-shortcuts button{border-radius:21px!important}
+body:not(.light) .cflo-oneoff-totals>div{background:rgba(237,255,255,.075)!important}
+body:not(.light) .glass-metrics,body:not(.light) .cflo-transaction{border-color:rgba(225,255,255,.17)!important}
+/* Floating capsule: extra oval, narrow, truly translucent, with understated labels */
+body:not(.light) .cflo-dock{z-index:350!important;position:fixed!important;bottom:calc(14px + env(safe-area-inset-bottom))!important;left:50%!important;transform:translateX(-50%)!important;width:min(352px,calc(100vw - 40px))!important;height:64px!important;padding:6px 9px!important;border-radius:999px!important;border:1px solid rgba(236,255,255,.43)!important;background:linear-gradient(140deg,rgba(234,255,255,.18),rgba(90,155,194,.115) 50%,rgba(193,249,243,.13))!important;-webkit-backdrop-filter:blur(38px) saturate(200%)!important;backdrop-filter:blur(38px) saturate(200%)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.42),inset 0 -1px 0 rgba(255,255,255,.10),0 13px 42px rgba(1,7,25,.30)!important}
+body:not(.light) .cflo-dock-tab{height:49px!important;border-radius:999px!important;font-size:10px!important;font-weight:500!important;letter-spacing:-.02em!important;gap:3px!important;background:transparent!important}
+body:not(.light) .cflo-dock-tab.active{background:rgba(222,255,252,.13)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.23)!important;color:#8dffe6!important}
+body:not(.light) .cflo-dock-icon,body:not(.light) .cflo-dock-icon svg{width:18px!important;height:18px!important}
+body:not(.light) .cflo-dock-exit{height:34px!important;width:36px!important;padding:8px!important;border-left:1px solid rgba(255,255,255,.17)!important}
+/* Better visual hierarchy: no oversized section titles */
+body:not(.light) .hero.v2-greeting h1{font-size:22px!important;font-weight:680!important;letter-spacing:-.6px!important}
+body:not(.light) .glass-forecast-total{font-size:29px!important;font-weight:720!important}
+body:not(.light) .card h3{letter-spacing:-.35px}
+body:not(.light) .glass-section-label{margin-top:20px}
+@media(prefers-reduced-motion:reduce){body::before,body::after{animation:none!important}}
